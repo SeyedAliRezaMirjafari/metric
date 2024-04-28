@@ -1,6 +1,4 @@
-package com.sed.app.common.metric.general.model;
-
-import com.digipay.component.metric.model.InputModel;
+package com.sed.app.common.metric.general.model.base;
 import lombok.*;
 
 @Setter

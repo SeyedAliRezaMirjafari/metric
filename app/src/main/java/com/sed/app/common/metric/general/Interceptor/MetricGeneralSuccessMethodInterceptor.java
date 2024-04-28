@@ -1,12 +1,12 @@
-package com.sed.app.common.metric.general.execution;
+package com.sed.app.common.metric.general.Interceptor;
 
-import com.digipay.component.metric.handler.MetricHandler;
-import com.digipay.component.metric.handler.MetricHandlerFactory;
-import com.digipay.component.metric.model.InputModel;
-import com.digipay.component.metric.model.OutputModel;
 import com.sed.app.common.metric.general.annotation.MetricSuccessCount;
-import com.sed.app.common.metric.general.handler.GeneralCountMetricHandler;
-import com.sed.app.common.metric.general.model.GeneralInputMetricModel;
+import com.sed.app.common.metric.general.handler.base.GeneralCountMetricHandler;
+import com.sed.app.common.metric.general.handler.base.MetricHandler;
+import com.sed.app.common.metric.general.handler.base.MetricHandlerFactory;
+import com.sed.app.common.metric.general.model.base.GeneralInputMetricModel;
+import com.sed.app.common.metric.general.model.base.InputModel;
+import com.sed.app.common.metric.general.model.base.OutputModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.aopalliance.intercept.MethodInterceptor;

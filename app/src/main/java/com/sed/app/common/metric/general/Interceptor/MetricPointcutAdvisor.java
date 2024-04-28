@@ -1,25 +1,29 @@
-package com.sed.app.common.metric.general.execution;
+package com.sed.app.common.metric.general.Interceptor;
 
-import com.sed.app.common.metric.general.annotation.MetricSuccessCount;
+import com.sed.app.common.metric.general.annotation.Metric;
 import org.aopalliance.aop.Advice;
+
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.support.AbstractPointcutAdvisor;
 import org.springframework.aop.support.ComposablePointcut;
 import org.springframework.aop.support.annotation.AnnotationMatchingPointcut;
 import org.springframework.stereotype.Component;
 
+
+
 @Component
-public class MetricGeneralSuccessPointcutAdvisor extends AbstractPointcutAdvisor {
+public class MetricPointcutAdvisor extends AbstractPointcutAdvisor {
 
 	private static final long serialVersionUID = 5780276746956699871L;
 
 	private final Advice advice;
+
 	private final Pointcut pointcut;
 
-	public MetricGeneralSuccessPointcutAdvisor(MetricGeneralSuccessMethodInterceptor interceptor) {
+	public MetricPointcutAdvisor(MetricMethodInterceptor interceptor) {
 		this.advice = interceptor;
 		this.pointcut = new ComposablePointcut()
-				.intersection(AnnotationMatchingPointcut.forMethodAnnotation(MetricSuccessCount.class));
+				.intersection(AnnotationMatchingPointcut.forMethodAnnotation(Metric.class));
 	}
 
 	@Override

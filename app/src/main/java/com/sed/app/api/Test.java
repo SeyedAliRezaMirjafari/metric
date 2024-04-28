@@ -1,6 +1,6 @@
 package com.sed.app.api;
 
-import com.digipay.component.metric.handler.MetricHandlerFactory;
+import com.sed.app.common.metric.general.handler.base.MetricHandlerFactory;
 import com.sed.app.service.TestService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

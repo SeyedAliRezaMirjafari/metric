@@ -1,9 +1,8 @@
-package com.sed.app.common.metric.general.handler;
+package com.sed.app.common.metric.general.handler.base;
 
-import com.digipay.component.metric.handler.MetricHandler;
-import com.digipay.component.metric.model.InputModel;
-import com.digipay.component.metric.model.OutputModel;
-import com.sed.app.common.metric.general.model.GeneralInputMetricModel;
+import com.sed.app.common.metric.general.model.base.GeneralInputMetricModel;
+import com.sed.app.common.metric.general.model.base.InputModel;
+import com.sed.app.common.metric.general.model.base.OutputModel;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

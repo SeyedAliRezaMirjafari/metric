@@ -27,12 +27,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.digipay.component</groupId>
-            <artifactId>common</artifactId>
-            <version>${component.common.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>

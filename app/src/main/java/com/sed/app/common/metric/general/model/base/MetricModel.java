@@ -1,0 +1,14 @@
+package com.sed.app.common.metric.general.model.base;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+public abstract class MetricModel {
+
+	private Long time;
+
+}
